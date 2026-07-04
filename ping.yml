@@ -1,7 +1,6 @@
------BEGIN OPENSSH PRIVATE KEY-----
-b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-QyNTUxOQAAACCzOl4LF+C61jLOvV+6BBryFJY6qumjLhDQCJv3F5J/DQAAAJiDB+2Hgwft
-hwAAAAtzc2gtZWQyNTUxOQAAACCzOl4LF+C61jLOvV+6BBryFJY6qumjLhDQCJv3F5J/DQ
-AAAEBwLIANe928I32JGEZbDCdwl4uKVUKt2lvVJ6I32WdegrM6XgsX4LrWMs69X7oEGvIU
-ljqq6aMuENAIm/cXkn8NAAAAEW1hY2tpc203QHNlcnBlbnQ3AQIDBA==
------END OPENSSH PRIVATE KEY-----
+- name: Test Connection to Serpent7
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Send a ping to the host
+      ansible.builtin.ping:
