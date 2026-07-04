@@ -1,5 +1,5 @@
 - name: Test Connection to Serpent7
-  hosts: all
+  hosts: Serpent7
   gather_facts: no
   tasks:
     - name: Send a ping to the host
